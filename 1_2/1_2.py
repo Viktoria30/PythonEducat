@@ -12,6 +12,6 @@ y = int(input('Введите второе натуральное число в 
 s = x + y
 p = x * y
 stop = 0
-for i in range(1000):
+
 
 
