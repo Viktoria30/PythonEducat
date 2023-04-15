@@ -12,16 +12,6 @@ y = int(input('Введите второе натуральное число в 
 s = x + y
 p = x * y
 stop = 0
-for i in range(1001):
-        if stop != 1:
-            for j in range(1001):
-                if stop != 1:
-                    if i * j == p and i + j == s:
-                        print(i, j)
-                        stop = 1
-            else:
-                j = 1001
-        else:
-            i = 1001
+for i in range(1000):
 
 
