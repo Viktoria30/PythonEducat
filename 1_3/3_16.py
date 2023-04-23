@@ -17,3 +17,19 @@ for i in range(n):
     if list_A[i] == x:
         count =+1
 print(f'Число {x} встечается {count} раз')
+
+# второй вариант решения
+
+list_nums = [int(input()) for _ in range(int(input()))]
+print(list_nums.count(int(input())))
+
+# третий вариант решения
+
+from random import choices
+
+num = int(input())
+list_nums = choices(range(num * 2), k=num)
+print(list_nums)
+
+result = list_nums.count(int(input()))
+print(result)

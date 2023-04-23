@@ -42,4 +42,21 @@ word = input('Введите слово: ').upper()
 if n == 1:
     print(sum([k for i in word for k, v in Engdict.items() if i in v]), 'очков')
 else:
-    print(sum([k for i in word for k, v in Rusdict.items() if i in v]), 'очков')
+    print(sum([k for i in word 
+                 for k, v in Rusdict.items() 
+                    if i in v]), 'очков')
+
+# второй вариант решения
+
+ang_dict = {"AEIOULNSTRАВЕИНОРСТ": 1, 
+            "DGДКЛМП": 2, 
+            "BCMPБГЁЬЯ": 3, 
+            "FHVWЙЫ": 4, 
+            "KЖЗХЦЧ": 5, 
+            "JXШЭЮ": 8, 
+            "QZФЩЪ": 10}
+
+word = input()
+
+print(sum([i[1] for i in ang_dict.items() 
+                for j in word.upper() if j in i[0]]))
